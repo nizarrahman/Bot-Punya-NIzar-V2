@@ -79,7 +79,7 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		const isCmd = command.startsWith(prefix)
 		const isGroup = msg.key.remoteJid.endsWith('@g.us')
 		const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-		const isOwner = ownerNumber == sender ? true : ["6285791458996@s.whatsapp.net", "628990999699@s.whatsapp.net"].includes(sender) ? true : false
+		const isOwner = ownerNumber == sender ? true : ["6281386945391@s.whatsapp.net", "6281386945391@s.whatsapp.net"].includes(sender) ? true : false
 		const pushname = msg.pushName
 		const q = chats.slice(command.length + 1, chats.length)
 		const body = chats.startsWith(prefix) ? chats : ''
@@ -223,8 +223,8 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		}
 		
 		const buttonsDefault = [
-			{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6285791458996` } },
-			{ urlButton: { displayText: `Script!`, url : `https://github.com/rtwone/chitandabot` } },
+			{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6281386945391` } },
+			{ urlButton: { displayText: `Script!`, url : `https://instagram.com/nizarrrahman.f_` } },
 			{ quickReplyButton: { displayText: `🧑 Owner`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } }
 		]
@@ -325,7 +325,7 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 		            break
 			case prefix+'donate':
 			case prefix+'donasi':
-			    reply(`──「 MENU DONATE 」──\n\nHi ${pushname} 👋🏻\n\`\`\`GOPAY : 085791458996\`\`\`\n\`\`\`PULSA : 085735338148 (Indosat)\`\`\`\nTerimakasih untuk kamu yang sudah donasi untuk perkembangan bot ini _^\n──「 THX FOR YOU ! 」──`)
+			    reply(`──「 MENU DONATE 」──\n\nHi ${pushname} 👋🏻n\`\`\`PULSA : 081386945391 (Telkomsel)\`\`\`\nTerimakasih untuk kamu yang sudah donasi untuk perkembangan bot ini _^\n──「 THX FOR YOU ! 」──`)
 			    break
 			case prefix+'owner':
 			    for (let x of ownerNumber) {
