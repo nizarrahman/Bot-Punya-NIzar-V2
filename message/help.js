@@ -24,7 +24,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	
   _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}*_
 
-    Library : *Baileys-MD*.
+    Library : *Kesian Prenjon*.
     Prefix : ( ${prefix} )
     Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
     Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
@@ -101,5 +101,5 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}addprem
   ≻ ${prefix}delprem
 
-`+'     \`\`\`Powered by Nodejs\`\`\`'
+`+'     \`\`\`Powered by Nizar Rahman\`\`\`'
 }
